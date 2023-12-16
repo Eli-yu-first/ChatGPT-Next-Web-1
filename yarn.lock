@@ -1748,6 +1748,11 @@
   resolved "https://registry.npmmirror.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
+"@zhengxs/erniebot@^0.1.0-alpha.5":
+  version "0.1.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@zhengxs/erniebot/-/erniebot-0.1.0-alpha.5.tgz#add8d4a2ca20317b4ddf1b8d4b0242602e380a7d"
+  integrity sha512-hxzaApCctJA5isiRGgBujDTLcqWDcYWKQbd7Dcxb8ElVSdr4YvUlsghno3KAlKBKCI8C/ZVUQ7K67Ul25AWsxw==
+
 acorn-import-assertions@^1.9.0:
   version "1.9.0"
   resolved "https://registry.npmmirror.com/acorn-import-assertions/-/acorn-import-assertions-1.9.0.tgz#507276249d684797c84e0734ef84860334cfb1ac"
