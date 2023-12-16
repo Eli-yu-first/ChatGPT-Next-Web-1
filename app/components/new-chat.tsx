@@ -25,7 +25,7 @@ function MaskItem(props: { mask: Mask; onClick?: () => void }) {
       {/* <img src={props.mask.imageSrc} alt={props.mask.name} /> */}
       {/* <img className={styles["mask-image"]} src={imageSrc} alt={props.mask.name} /> */}
       <img 
-        style={{ width: '200px', height: '200px', objectFit: 'cover', borderRadius: '4px' }} 
+        style={{ width: "100%",  objectFit: 'cover', borderRadius: '4px' }} 
         src={imageSrc} 
         alt={props.mask.name} 
       />
@@ -45,15 +45,16 @@ function useMaskGroup(masks: Mask[]) {
       const rect = appBody.getBoundingClientRect();
       const maxWidth = rect.width;
       const maxHeight = rect.height * 0.6;
-      const maskItemWidth = 120;
-      const maskItemHeight = 50;
+      const maskItemWidth = 200;
+      const maskItemHeight = 200;
 
       const randomMask = () => masks[Math.floor(Math.random() * masks.length)];
       let maskIndex = 0;
       const nextMask = () => masks[maskIndex++ % masks.length];
 
       const rows = Math.ceil(maxHeight / maskItemHeight);
-      const cols = Math.ceil(maxWidth / maskItemWidth);
+      // const cols = Math.ceil(maxWidth / maskItemWidth);
+      const cols = 1
 
       const newGroups = new Array(rows)
         .fill(0)
@@ -139,20 +140,21 @@ export function NewChat() {
       </div>
       <div className={styles["mask-cards"]}>
         <div className={styles["mask-card"]}>
-          <EmojiAvatar avatar="1f606" size={24} />
+          <EmojiAvatar avatar="1f6a7" size={24} />
         </div>
         <div className={styles["mask-card"]}>
-          <EmojiAvatar avatar="1f916" size={24} />
+          <EmojiAvatar avatar="1f698" size={24} />
         </div>
         <div className={styles["mask-card"]}>
-          <EmojiAvatar avatar="1f479" size={24} />
+          <EmojiAvatar avatar="1f6a6" size={24} />
         </div>
       </div>
 
-      <div className={styles["title"]}>{Locale.NewChat.Title}</div>
-      <div className={styles["sub-title"]}>{Locale.NewChat.SubTitle}</div>
+      {/* <div className={styles["title"]}>{Locale.NewChat.Title}</div> */}
+      <div className={styles["title"]}>Choose your Route</div>
+      <div className={styles["sub-title"]}>Talk to the road</div>
 
-      <div className={styles["actions"]}>
+      {/* <div className={styles["actions"]}>
         <IconButton
           text={Locale.NewChat.More}
           onClick={() => navigate(Path.Masks)}
@@ -169,7 +171,7 @@ export function NewChat() {
           shadow
           className={styles["skip"]}
         />
-      </div>
+      </div> */}
 
       <div className={styles["masks"]} ref={maskRef}>
         {groups.map((masks, i) => (
