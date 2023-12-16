@@ -1,0 +1,28 @@
+{
+  "annotations": [
+    {
+      "image_id": "FR1",
+      "caption": "The image shows Very clear. Normal city road.. It features positioned on the upper side of the road, curved bicycle lane lane opposite to the direction of traffic flow, positioned on the upper side of the road, straight motorway lane, positioned on the upper side of the road, straight motorway lane in the direction of traffic flow, positioned on the upper side of the road, straight bicycle lane lane in the direction of traffic flow lanes. There are 2 bicycle lane lanes, 2 motorway lanes Additionally, it includes crossing zones like positioned on the lower side of the road lane change zone in the direction of traffic flow."
+    },
+    {
+      "image_id": "FR4",
+      "caption": "The image shows Very clear. Normal city road.. It features positioned on the upper side of the road, straight motorway lane in the direction of traffic flow, positioned on the upper side of the road, straight motorway lane opposite to the direction of traffic flow lanes. There are 2 motorway lanes"
+    },
+    {
+      "image_id": "FR5",
+      "caption": "The image shows Very clear. Normal city road.. It features positioned on the lower side of the road, with multiple curves motorway lane opposite to the direction of traffic flow, positioned on the upper side of the road, curved motorway lane opposite to the direction of traffic flow, positioned on the upper side of the road, with multiple curves motorway lane opposite to the direction of traffic flow lanes. There are 3 motorway lanes"
+    },
+    {
+      "image_id": "FR6",
+      "caption": "The image shows Very clear. Normal city road.. It features positioned on the lower side of the road, straight motorway lane opposite to the direction of traffic flow, positioned on the upper side of the road, straight motorway lane in the direction of traffic flow lanes. There are 2 motorway lanes"
+    },
+    {
+      "image_id": "FR9",
+      "caption": "The image shows Very clear. Normal city road.. It features positioned on the upper side of the road, straight bicycle lane lane opposite to the direction of traffic flow, positioned on the upper side of the road, straight motorway lane opposite to the direction of traffic flow, positioned on the upper side of the road, straight deceleration lane lane opposite to the direction of traffic flow, positioned on the upper side of the road, straight bicycle lane lane opposite to the direction of traffic flow lanes. There are 2 bicycle lane lanes, 1 motorway lanes, 1 deceleration lane lanes"
+    },
+    {
+      "image_id": "FR11",
+      "caption": "The image shows Very clear. Construction road.. It features positioned on the lower side of the road, straight motorway lane in the direction of traffic flow, positioned on the lower side of the road, straight motorway lane in the direction of traffic flow lanes. There are 2 motorway lanes"
+    }
+  ]
+}

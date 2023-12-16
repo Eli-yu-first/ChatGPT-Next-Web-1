@@ -1,0 +1,887 @@
+{
+    "FR1": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Discribe the lane attribute in current road.",
+          "choices": [],
+          "answer": "There are 4 lanes in the image, lane attributes from left to right are: bicycle lane|motorway|motorway|bicycle lane.",
+          "task": "essay question",
+          "grade": "grade12",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane attribute"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 4,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "train"
+    },
+    "FR2": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "answer": 1,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "test"
+    },
+    "FR3": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "test"
+    },
+    "FR4": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "train"
+    },
+    "FR5": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Discribe the lane attribute in current road.",
+          "choices": [],
+          "answer": "There are 3 lanes in the image, lane attributes from left to right are: motorway|motorway|motorway.",
+          "task": "essay question",
+          "grade": "grade12",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane attribute"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "train"
+    },
+    "FR6": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "train"
+    },
+    "FR7": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Discribe the lane attribute in current road.",
+          "choices": [],
+          "answer": "There are 4 lanes in the image, lane attributes from left to right are: motorway|motorway|motorway|motorway.",
+          "task": "essay question",
+          "grade": "grade12",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane attribute"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "test"
+    },
+    "FR8": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Discribe the lane attribute in current road.",
+          "choices": [],
+          "answer": "There are 3 lanes in the image, lane attributes from left to right are: motorway|motorway|bicycle lane.",
+          "task": "essay question",
+          "grade": "grade12",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane attribute"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "val"
+    },
+    "FR9": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Discribe the lane attribute in current road.",
+          "choices": [],
+          "answer": "There are 4 lanes in the image, lane attributes from left to right are: bicycle lane|motorway|deceleration lane|bicycle lane.",
+          "task": "essay question",
+          "grade": "grade12",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane attribute"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "train"
+    },
+    "FR10": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "test"
+    },
+    "FR11": {
+      "image": [
+        "point_cloud_bev.jpg",
+        "photo_forward.jpg",
+        "photo_lef_back.jpg",
+        "photo_rig_back.jpg"
+      ],
+      "qa": [
+        {
+          "question": "What kind of road scene is it in the images?",
+          "choices": [
+            "Normal city road.",
+            "Construction road.",
+            "Undeveloped road.",
+            "Road mark repainting.",
+            "Roundabout.",
+            "None of the above."
+          ],
+          "answer": 1,
+          "task": "closed choice",
+          "grade": "grade3",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road scene type"
+        },
+        {
+          "question": "What is the point cloud data quality in current road area of this image?",
+          "choices": [
+            "Very clear.",
+            "Not clear, road mark is worn.",
+            "Not clear, road mark is occluded by some vehicle.",
+            "Not clear, road mark is worn and occluded by vehicle."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade2",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "data quality"
+        },
+        {
+          "question": "How many lanes in current road?",
+          "choices": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2,
+          "task": "closed choice",
+          "grade": "grade5",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "lane number"
+        },
+        {
+          "question": "Is there any road cross, intersection or lane change zone in the main road?",
+          "choices": [
+            "No.",
+            "Yes, there is one crossroad in the image.",
+            "Yes, there is one T-junction in the image.",
+            "Yes, there is a small road intersection in the image.",
+            "Yes, there is one lane change zone in the image.",
+            "Yes, there is one irregular intersection in the image."
+          ],
+          "answer": 0,
+          "task": "closed choice",
+          "grade": "grade8",
+          "subject": "social science",
+          "topic": "traffic road",
+          "category": "road cross"
+        }
+      ],
+      "split": "train"
+    }
+}
