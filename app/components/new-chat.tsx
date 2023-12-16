@@ -18,13 +18,18 @@ import { showConfirm } from "./ui-lib";
 import { BUILTIN_MASK_STORE } from "../masks";
 
 function MaskItem(props: { mask: Mask; onClick?: () => void }) {
+  // const imageSrc = `../data/image/${props.mask.name}.jpg`;
+  const imageSrc = `/data/images/FR1_combined.jpg`;
   return (
     <div className={styles["mask"]} onClick={props.onClick}>
-      <MaskAvatar
-        avatar={props.mask.avatar}
-        model={props.mask.modelConfig.model}
+      {/* <img src={props.mask.imageSrc} alt={props.mask.name} /> */}
+      {/* <img className={styles["mask-image"]} src={imageSrc} alt={props.mask.name} /> */}
+      <img 
+        style={{ width: '200px', height: '200px', objectFit: 'cover', borderRadius: '4px' }} 
+        src={imageSrc} 
+        alt={props.mask.name} 
       />
-      <div className={styles["mask-name"] + " one-line"}>{props.mask.name}</div>
+      {/* <div className={styles["mask-name"] + " one-line"}>{props.mask.name}</div> */}
     </div>
   );
 }
