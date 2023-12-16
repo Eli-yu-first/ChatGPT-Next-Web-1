@@ -19,7 +19,13 @@ import { Mask } from "../store/mask";
 import { useRef, useEffect } from "react";
 import { showConfirm } from "./ui-lib";
 import { useMobileScreen } from "../utils";
-
+export const createImageFromUrl = (imageUrl: string) => {
+  const image = new Image();
+  image.src = imageUrl;
+  image.alt = "Description"; // Optionally, you can pass a description as a parameter.
+  // Add any additional properties or styles to the image as needed
+  return image;
+};
 export function ChatItem(props: {
   onClick?: () => void;
   onDelete?: () => void;
@@ -31,6 +37,7 @@ export function ChatItem(props: {
   index: number;
   narrow?: boolean;
   mask: Mask;
+  image: string;
 }) {
   const draggableRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
@@ -73,6 +80,9 @@ export function ChatItem(props: {
           ) : (
             <>
               <div className={styles["chat-item-title"]}>{props.title}</div>
+              <div className={styles["chat-item-img"]}>
+                <img src={props.image} alt="Description of the list item" />
+              </div>
               <div className={styles["chat-item-info"]}>
                 <div className={styles["chat-item-count"]}>
                   {Locale.ChatItem.ChatItemCount(props.count)}
@@ -159,8 +169,10 @@ export function ChatList(props: { narrow?: boolean }) {
                 }}
                 narrow={props.narrow}
                 mask={item.mask}
+                image={item.imageurl}
               />
             ))}
+
             {provided.placeholder}
           </div>
         )}

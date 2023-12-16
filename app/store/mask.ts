@@ -38,6 +38,13 @@ export const createEmptyMask = () =>
     builtin: false,
     createdAt: Date.now(),
   }) as Mask;
+export const createImageFromUrl = (imageUrl: string) => {
+  const image = new Image();
+  image.src = imageUrl;
+  image.alt = "Description"; // Optionally, you can pass a description as a parameter.
+  // Add any additional properties or styles to the image as needed
+  return image;
+};
 
 export const useMaskStore = createPersistStore(
   { ...DEFAULT_MASK_STATE },
