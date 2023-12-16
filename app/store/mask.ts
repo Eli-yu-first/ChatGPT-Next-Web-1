@@ -1,4 +1,4 @@
-import { BUILTIN_MASKS } from "../masks";
+import { BUILTIN_MASKS, BUILTIN_ROADS } from "../masks";
 import { getLang, Lang } from "../locales";
 import { DEFAULT_TOPIC, ChatMessage } from "./chat";
 import { ModelConfig, useAppConfig } from "./config";
@@ -9,7 +9,7 @@ import { createPersistStore } from "../utils/store";
 export type Mask = {
   id: string;
   createdAt: number;
-  avatar: string;
+  avatar: string; // image ID
   name: string;
   hideContext?: boolean;
   context: ChatMessage[];
@@ -84,7 +84,7 @@ export const useMaskStore = createPersistStore(
       );
       const config = useAppConfig.getState();
       if (config.hideBuiltinMasks) return userMasks;
-      const buildinMasks = BUILTIN_MASKS.map(
+      const buildinMasks = BUILTIN_ROADS.map(
         (m) =>
           ({
             ...m,

@@ -56,7 +56,7 @@ export interface ChatSession {
   mask: Mask;
 }
 
-export const DEFAULT_TOPIC = Locale.Store.DefaultTopic;
+export const DEFAULT_TOPIC = "FR1"; //Locale.Store.DefaultTopic;
 export const BOT_HELLO: ChatMessage = createMessage({
   role: "assistant",
   content: Locale.Store.BotHello,

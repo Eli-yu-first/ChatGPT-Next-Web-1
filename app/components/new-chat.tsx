@@ -19,7 +19,7 @@ import { BUILTIN_MASK_STORE } from "../masks";
 
 function MaskItem(props: { mask: Mask; onClick?: () => void }) {
   // const imageSrc = `../data/image/${props.mask.name}.jpg`;
-  const imageSrc = `/data/images/FR1_combined.jpg`;
+  const imageSrc = "/data/images/" + props.mask.avatar + "_combined.jpg";
   return (
     <div className={styles["mask"]} onClick={props.onClick}>
       {/* <img src={props.mask.imageSrc} alt={props.mask.name} /> */}
@@ -52,9 +52,10 @@ function useMaskGroup(masks: Mask[]) {
       let maskIndex = 0;
       const nextMask = () => masks[maskIndex++ % masks.length];
 
-      const rows = Math.ceil(maxHeight / maskItemHeight);
+      // const rows = Math.ceil(maxHeight / maskItemHeight);
       // const cols = Math.ceil(maxWidth / maskItemWidth);
       const cols = 1
+      const rows = masks.length
 
       const newGroups = new Array(rows)
         .fill(0)
