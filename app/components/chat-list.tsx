@@ -81,7 +81,10 @@ export function ChatItem(props: {
             <>
               <div className={styles["chat-item-title"]}>{props.title}</div>
               <div className={styles["chat-item-img"]}>
-                <img src={props.image} alt="Description of the list item" />
+                <img
+                  src={"/data/images/" + props.mask.avatar + "_combined.jpg"}
+                  alt="Description of the list item"
+                />
               </div>
               <div className={styles["chat-item-info"]}>
                 <div className={styles["chat-item-count"]}>
