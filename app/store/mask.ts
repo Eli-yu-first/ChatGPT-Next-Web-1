@@ -25,13 +25,32 @@ export const DEFAULT_MASK_STATE = {
 
 export type MaskState = typeof DEFAULT_MASK_STATE;
 
-export const DEFAULT_MASK_AVATAR = "gpt-bot";
+export const DEFAULT_MASK_AVATAR = "FR0";
 export const createEmptyMask = () =>
   ({
     id: nanoid(),
     avatar: DEFAULT_MASK_AVATAR,
     name: DEFAULT_TOPIC,
-    context: [],
+    context: [
+          {
+              "id": "1",
+              "role": "assistant",
+              "content": "Welcome to Road Talk. Lets Chat",
+              "date": ""
+          },
+          {
+              "id": "2",
+              "role": "user",
+              "content": "How to start a new chat",
+              "date": ""
+          },
+          {
+              "id": "3",
+              "role": "assistant",
+              "content": "Click on the New Chat button on the top right corner to start a new chat",
+              "date": ""
+          }
+    ],
     syncGlobalConfig: true, // use global config as default
     modelConfig: { ...useAppConfig.getState().modelConfig },
     lang: getLang(),
