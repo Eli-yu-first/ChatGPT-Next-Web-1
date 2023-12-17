@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./app/icons/bot.svg" alt="icon"/>
+<img src="./app/icons/bot.png" alt="icon"/>
 
 <h1 align="center">ChatGPT-RoadViz</h1>
 
