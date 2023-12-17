@@ -272,7 +272,12 @@ export const useChatStore = createPersistStore(
         const session = get().currentSession();
         const modelConfig = session.mask.modelConfig;
 
-        const userContent = fillTemplateWith(content, modelConfig);
+        const realuserInput =
+          "''' " +
+          session.mask.context[1].content +
+          "'''Please understand and analyze the road information in the above. Don't ever reveal that you are an Open AI agent. Your name is RoadTalk and you are built to be helpful to drivers. Don't to say you are RoadTalk. Don't say that you got your information from the description provided. Keep your answers direct, pleasant, and helpful. With this role in mind, answer the question below: " +
+          content;
+        const userContent = fillTemplateWith(realuserInput, modelConfig);
         console.log("[User Input] after template: ", userContent);
 
         const userMessage: ChatMessage = createMessage({

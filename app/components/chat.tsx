@@ -496,7 +496,6 @@ export function ChatActions(props: {
         text={Locale.Chat.InputActions.Prompt}
         icon={<PromptIcon />}
       />
-
     </div>
   );
 }
@@ -632,6 +631,7 @@ function _Chat() {
   const SEARCH_TEXT_LIMIT = 30;
   const onInput = (text: string) => {
     setUserInput(text);
+
     const n = text.trim().length;
 
     // clear search results
@@ -652,13 +652,18 @@ function _Chat() {
     if (userInput.trim() === "") return;
     const matchCommand = chatCommands.match(userInput);
     if (matchCommand.matched) {
-      setUserInput("" + session.mask.context[1].content);
+      setUserInput("");
       setPromptHints([]);
       matchCommand.invoke();
       return;
     }
+
     setIsLoading(true);
-    chatStore.onUserInput(userInput).then(() => setIsLoading(false));
+    // const realuserInput = "''' "+session.mask.context[1].content+"'''Please understand and analyze the road information in the above. Don't ever reveal that you are an Open AI agent. Your name is RoadTalk and you are built to be helpful to drivers. Don't to say you are RoadTalk. Don't say that you got your information from the description provided. Keep your answers direct, pleasant, and helpful. With this role in mind, answer the question below: "+userInput
+    chatStore.onUserInput(userInput).then(() => {
+      setUserInput("");
+      setIsLoading(false);
+    });
     localStorage.setItem(LAST_INPUT_KEY, userInput);
     setPromptHints([]);
     if (!isMobileScreen) inputRef.current?.focus();
@@ -674,9 +679,15 @@ function _Chat() {
         // if user is selecting a chat command, just trigger it
         matchedChatCommand.invoke();
         setUserInput("");
+        // setUserInput("" + session.mask.context[1].content);
+
+        console.log("123" + session.mask.context[1].content);
       } else {
         // or fill the prompt
         setUserInput(prompt.content);
+        // setUserInput(prompt.content+"" + session.mask.context[1].content);
+
+        console.log("123" + session.mask.context[1].content);
       }
       inputRef.current?.focus();
     }, 30);
@@ -738,8 +749,8 @@ function _Chat() {
     if (selectOrCopy(e.currentTarget, message.content)) {
       if (userInput.length === 0) {
         setUserInput(message.content);
+        // setUserInput(message.content+"" + session.mask.context[1].content);
       }
-
       e.preventDefault();
     }
   };
@@ -1193,7 +1204,14 @@ function _Chat() {
                       onContextMenu={(e) => onRightClick(e, message)}
                       onDoubleClickCapture={() => {
                         if (!isMobileScreen) return;
-                        setUserInput(message.content);
+                        // setUserInput(message.content);
+                        setUserInput(
+                          message.content +
+                            "" +
+                            session.mask.context[1].content,
+                        );
+
+                        console.log("123" + session.mask.context[1].content);
                       }}
                       fontSize={fontSize}
                       parentRef={scrollRef}
