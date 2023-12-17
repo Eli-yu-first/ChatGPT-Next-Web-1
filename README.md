@@ -1,13 +1,13 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
-<h1 align="center">ChatGPT Next Web</h1>
+<h1 align="center">ChatGPT-RoadViz</h1>
 
 English / [简体中文](./README_CN.md)
 
 One-Click to get well-designed cross-platform ChatGPT web UI.
 
-一键免费部署你的跨平台私人 ChatGPT 应用。
+VLM+LLM强力赋能智能驾驶决策。
 
 [![Web][Web-image]][web-url]
 [![Windows][Windows-image]][download-url]
